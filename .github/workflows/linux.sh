@@ -24,7 +24,7 @@ run appimage
 run generate-rpm
 
 mkdir ../dist &>/dev/null
-
+ls -R #I hate life
 mv PKGBUILD ../dist/
 mv ascella-*.AppImage ../dist/
 mv ascella-*.tar.gz ../dist/
