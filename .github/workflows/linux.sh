@@ -11,7 +11,7 @@ sudo mv appimagetool-x86_64.AppImage /bin/appimagetool
 cd desktop
 
 run() {
-    strip -s target/release/ascella
+    strip -s target/x86_64-unknown-linux-gnu/release/desktop
     echo installing cargo $1
     cargo install cargo-$1 &>/dev/null
     echo Running cargo $1
