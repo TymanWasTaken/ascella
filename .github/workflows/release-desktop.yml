@@ -126,7 +126,9 @@ jobs:
           mkdir dist
 
           mv ascella-x86_64-linux/* dist/
-          mv ascella-x86_64-macos/ascella dist/ascella-x86_64-macos
+          cd ascella-x86_64-macos
+          mv desktop ascella
+          tar -cvJf ../dist/ascella-x86_64-macos.tar.gx desktop
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
